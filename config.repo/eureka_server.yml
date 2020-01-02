@@ -1,0 +1,16 @@
+##端口
+server:
+  port: 8001
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          ## \u516C\u5E93\uFF0Chttps\uFF0C\u65E0\u9700\u5E10\u53F7\u5BC6\u7801
+          uri: https://github.com/thiswsf/springcloud_config_public.git    # \u914D\u7F6Egit\u4ED3\u5E93\u7684\u5730\u5740
+          search-paths: config-repo,config.repo                                               # git\u4ED3\u5E93\u5730\u5740\u4E0B\u7684\u76F8\u5BF9\u5730\u5740\uFF0C\u53EF\u4EE5\u914D\u7F6E\u591A\u4E2A\uFF0C\u7528,\u5206\u5272\u3002
+          ##username: xyz                                            # github\u8D26\u53F7
+          ##password: 123                                             # github\u5BC6\u7801
+
